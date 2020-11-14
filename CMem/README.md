@@ -8,12 +8,16 @@ CMem is a windows command addon that adds memory commands primarily used for deb
 - To safely add the binary executables to the Path, just open the windows search bar and type 'Path', now click `Edit the system environmental variable`. Click `Environmental Variables...`, scroll down in the system variables till you find `Path`. Click `Path` then `Edit` and finally when the window opens to edit the `Path` just click `New`. Finally enter `C:\CMem\bin` and now you should be able to use the commands anywhere you want.
 
 # Usage
-All commands are named in a specific way so they're easy to remember. vm is the suffix for virtual memory, and pm is the suffix for physical memory (RAM). total_[suffix] gives you the total of the memory specified. totalused_[suffix] gives you the current total amount of memory being used, procused_[suffix] gives you the current amount of memory being used by the current process.
+Most commands are named in a specific way so they're easy to remember. vm is the suffix for virtual memory, and pm is the suffix for physical memory (RAM). total_[suffix] gives you the total of the memory specified. totalused_[suffix] gives you the current total amount of memory being used, procused_[suffix] gives you the current amount of memory being used by the current process. There is one command which has an exception for all of these rules named 'cm-all' — this command can display the return value for each command.
+
+Arguments for cm-all:
+- You can get the help message and list all arguments for cm-all by typing `cm-all help` in command line.
+- ie. `--tvm` = `total_vm` and `--pupm` = `procused_pm`
 
 So for example:
 - totalused_pm: Gives you the current total amount of RAM being used
 - procused_vm: Gives you the current amount of virtual memory being used by the current process
-
+- cm-all -a: Gets the return value for every command and describes what each value is along with a helpful indicator that suggests the unit of data storage.
 *etc.*
 
-To use the commands just open command prompt and type the command name; at the moment no arguments for these commands exist so <ins>all you have to type is the name of the command</ins>.
+To use the commands just open command prompt and type the command name (and sometimes arguments); There is only one command with arguments so mostly all you have to type is the name of the command.
